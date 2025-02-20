@@ -53,7 +53,19 @@
         var_dump($nome, $idade, $salario, $matriculado);
         echo "</pre>";
 
+
+        echo "<div class='bg-dark text-white py-1 px-3 mb-3 rounded'> interpolação | " . __LINE__ ."</div>";
+
+        echo 'Meu nome é : $nome <br>';
+        echo "Meu nome é : $nome <br>";
+        echo "Meu nome é : {$nome} <br>";
+
         ?>
+
+
+
+
+
 
 
     </main>
