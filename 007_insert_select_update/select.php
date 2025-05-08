@@ -82,12 +82,16 @@ try {
                         </td>
 
 
+
                         <td>
-                            <a href='' class='btn btn-outline-danger'>
+                            <a href='form_delete.php?id=" .  $pessoas['pes_id'] . "' class='btn btn-outline-danger'>
                             <i class='bi bi-trash me-2'></i>
                             Deletar
                             </a>
                         </td>
+
+
+                       
                         </tr>";
                 }
             } else {
@@ -97,6 +101,9 @@ try {
             <!--------------------------------------- -->
 
         </table>
+
+        <br><hr>
+        <a href="index.php" class="btn btn-primary">Voltar</a>
     </div>
 
 </body>

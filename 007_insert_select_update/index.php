@@ -26,6 +26,9 @@
     <input type="number" step="0.01" name="altura"><br><br>
 
     <input type="submit" value="Cadastrar" class="btn btn-primary">
+    <br>
+    <br>
+    <a href="select.php">Todos os registros</a>
 
 
     </form>

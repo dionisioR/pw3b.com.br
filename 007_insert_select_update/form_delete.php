@@ -48,26 +48,24 @@ if (isset($_GET["id"])) {
 
     <main class="container my-5">
 
-        <h1>Formulário de cadastro</h1>
+        <h1>Delete</h1>     
 
-        <form action="update.php" method="post">
+            <strong>Nº de registro:</strong><br>
+            <p><?= $pessoa['pes_id'] ?></p> 
 
-            <label>Nº de registro:</label><br>
-            <input type="text" value="<?= $pessoa['pes_id'] ?>" name="id" readonly ><br><br>
+            <strong>Nome:</strong><br>
+            <p><?= $pessoa['pes_nome'] ?></p>
 
-            <label>Nome:</label><br>
-            <input type="text" value="<?= $pessoa['pes_nome'] ?>" name="nome" required><br><br>
+            <strong>Peso:</strong><br>
+            <p><?= $pessoa['pes_peso'] ?></p>
 
-            <label>Peso:</label><br>
-            <input type="number" value="<?= $pessoa['pes_peso'] ?>" step="0.01" name="peso"><br><br>
+            <strong>Altura:</strong><br>
+            <p><?= $pessoa['pes_altura'] ?></p>
 
-            <label>Altura:</label><br>
-            <input type="number" value="<?= $pessoa['pes_altura'] ?>" step="0.01" name="altura"><br><br>
+            <a href="select.php" class="btn btn-primary mx-2">Cancelar</a>
+            <a href="delete.php?id=<?= $pessoa['pes_id'] ?>" class="btn btn-danger mx-2">Deletar</a>
+ 
 
-            <input type="submit" value="Cadastrar" class="btn btn-primary">
-
-
-        </form>
 
     </main>
 
