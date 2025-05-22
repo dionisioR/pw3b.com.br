@@ -15,7 +15,7 @@
 
         <h1 class="my-3">Introdução a P.O.O.</h1>
 
-        <form action="">
+        <form action="processa.php" method="post">
             <div class="mb-3 w-50">
                 <label>Nome:</label>
                 <input type="text" name="nome" class="form-control">
@@ -34,6 +34,11 @@
             <div class="mb-3 w-50">
                 <label>Altura:</label>
                 <input type="number" step="0.01" name="altura" class="form-control">
+            </div>
+            <div class="mb-3 w-50">
+
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+
             </div>
 
         </form>
